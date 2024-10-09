@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="todo.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <h1>To Do List</h1>
+    <div class="main">
+        <input id="input" type="text">&nbsp<button id="button">Add</button>
+        <div id="list">
+        </div>
+    </div>
+    <script>
+        let but = document.getElementById('button');
+        let list = document.getElementById('list');
+        let inp = document.getElementById('input');
+
+    but.addEventListener('click', function(){
+    const h = document.createElement('p');
+    h.innerText = inp.value;
+    list.appendChild(h);
+    inp.value = "";
+    h.addEventListener('click', function(){
+        h.style.textDecoration = "line-through";
+    })
+    h.addEventListener('dblclick', function(){
+        list.removeChild(h);
+    })
+})
+    </script>
+</body>
+</html>

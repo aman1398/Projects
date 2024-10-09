@@ -1,0 +1,28 @@
+html, body {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.main {
+    width: 360px;
+}
+
+.button {
+    width: 70px;
+    height: 35px;
+}
+
+#clear {
+    width: 70px;
+    height: 35px;
+}
+
+#equals {
+    width: 210px;
+    height: 35px;
+}
+
+#ip{
+    width: 221px;
+    height: 30px;
+}
